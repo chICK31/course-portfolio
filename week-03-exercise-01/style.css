@@ -1,0 +1,33 @@
+/* Include padding and borders in each element's total width. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #172b3a;
+    margin: 0;
+    padding: 48px 20px;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    /* Padding creates space inside the border. */
+    padding: 32px;
+    background-color: #fffaf0;
+    border: 4px solid #40b8a6;
+}
+
+.card h1 {
+    color: #173d46;
+    font-size: 36px;
+    margin: 0 0 16px;
+}
+
+.card p {
+    color: #33454e;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
