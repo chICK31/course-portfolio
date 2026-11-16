@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 04 Exercise 01 | Wikipedia Homework Side Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <a href="../">← Course portfolio</a>
+        <p class="eyebrow">Week 04 Exercise 01 · Dev Tools Vandalism</p>
+        <h1>Wikipedia: The Ultimate Homework Side Quest</h1>
+        <p>I used browser developer tools to temporarily change the Wikipedia homepage into a homework side quest. The screenshot below shows the edited page alongside the Elements and Styles panels. These changes were local to my browser and did not change the real website.</p>
+        <figure class="screenshot-container">
+            <a href="devtools-vandalism-screenshot.png"><img src="devtools-vandalism-screenshot.png" alt="Wikipedia homepage with its tagline changed to The Ultimate Homework side quest in purple, 28-pixel text; developer tools show the edited HTML and CSS." width="1919" height="903"></a>
+            <figcaption>The edited homepage and the CSS declarations in developer tools. Select the image to view it at full size.</figcaption>
+        </figure>
+        <h2>What I changed</h2>
+        <ul>
+            <li><strong>HTML content:</strong> I replaced the tagline “The Free Encyclopedia” with “The Ultimate Homework side quest.”</li>
+            <li><strong>Text color:</strong> I added <code>color: purple;</code> to the tagline.</li>
+            <li><strong>Text size:</strong> I added <code>font-size: 28px;</code>, making the tagline larger and causing it to wrap onto two lines.</li>
+        </ul>
+        <p>The new tagline turns researching homework into a game-style side quest. The purple color and larger text help the joke stand out from the rest of the homepage.</p>
+        <h2>HTML and CSS working together</h2>
+        <p>The HTML controls the words on the page, while CSS controls their appearance. Editing the tagline text changed its meaning, and changing the color and font size changed how it looked. Refreshing the page removes these temporary edits.</p>
+        <footer><p>Original website: <a href="https://www.wikipedia.org/">Wikipedia.org</a> · Screenshot of temporary browser edits.</p></footer>
+    </main>
+</body>
+</html>
