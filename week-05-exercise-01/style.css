@@ -1,0 +1,118 @@
+:root {
+    --ink: #20382f;
+    --paper: #f7f6ef;
+    --green: #235e49;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: system-ui, sans-serif;
+}
+
+main {
+    max-width: 64rem;
+    margin: auto;
+    padding: clamp(1.25rem, 5vw, 4rem);
+}
+
+a { color: var(--green); }
+header { margin: 3rem 0 2rem; }
+h1 { margin: 0; font: bold clamp(2.5rem, 7vw, 5rem)/1.05 Georgia, serif; }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 1rem;
+}
+
+section {
+    background: #fffef9;
+    padding: 1.5rem 1.5rem 2rem;
+    border: 1px solid #c5ccbd;
+    border-radius: 0.75rem;
+}
+
+h2 {
+    margin: 0 0 1.75rem;
+    font: 600 0.88rem/1.5 ui-monospace, monospace;
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+    padding: 0.8rem 1.35rem;
+    border: 2px solid transparent;
+    border-radius: 0.4rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+:focus-visible { outline: 3px solid #174c98; outline-offset: 5px; }
+
+.button-01 { transition: background-color 0.3s ease, color 0.3s ease; }
+.button-01:hover, .button-01:focus-visible {
+    background-color: #cbe8ae;
+    color: var(--ink);
+}
+
+.button-02 {
+    background-color: transparent;
+    color: var(--green);
+    border-color: var(--green);
+    transition: background-color 0.25s linear, color 0.25s linear;
+}
+.button-02:hover, .button-02:focus-visible {
+    background-color: var(--green);
+    color: white;
+}
+
+.button-03 {
+    background-color: #574482;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.button-03:hover, .button-03:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 12px #33204c40;
+}
+
+.button-04 {
+    background-color: #a23f23;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.button-04:hover, .button-04:focus-visible {
+    transform: translateX(6px);
+    background-color: #76301d;
+}
+
+.button-05 {
+    background-color: #e3edfc;
+    color: #244771;
+    border-color: #9cbada;
+    transition: border-radius 0.4s ease, border-color 0.4s ease;
+}
+.button-05:hover, .button-05:focus-visible {
+    border-radius: 2rem;
+    border-color: #244771;
+}
+
+.button-06 {
+    background-color: #ffce65;
+    color: var(--ink);
+    border-color: var(--ink);
+    box-shadow: 0 4px var(--ink);
+    transition: transform 0.18s ease-out, box-shadow 0.18s ease-out;
+}
+.button-06:hover, .button-06:focus-visible {
+    transform: translateY(3px) scale(0.98);
+    box-shadow: 0 1px var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    button[class] { transition: none; }
+    button[class]:is(:hover, :focus-visible) { transform: none; }
+}
